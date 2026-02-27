@@ -112,6 +112,5 @@ streamlit run src/app.py
 3. Click **"Process Document"** to build the AI's vector database.
 4. Use the chat interface to ask specific, analytical questions about the document's contents.
 
----
 
-Once you push this to your GitHub, your repository will look incredibly professional and ready for recruiters to view.
+
