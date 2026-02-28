@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enterprise RAG Assistant - An advanced Retrieval-Augmented Generation system for private PDF documents">
+    <meta name="keywords" content="RAG, AI, Machine Learning, PDF, Document Analysis, LangChain, FAISS, Llama">
+    <meta name="author" content="Harman">
+    <title>Enterprise RAG Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">🤖 Enterprise RAG Assistant</h1>
+                <a href="https://enterprise-rag-assistant1.streamlit.app/" class="cta-button" target="_blank">Launch App</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Chat with Your PDF Documents Using AI</h2>
+                <p class="subtitle">An advanced Retrieval-Augmented Generation (RAG) system that allows natural language conversations with your private, complex PDF documents.</p>
+                <div class="cta-buttons">
+                    <a href="https://enterprise-rag-assistant1.streamlit.app/" class="primary-button" target="_blank">Try Live Demo</a>
+                    <a href="https://github.com/Harman-1344/Enterprise-RAG-Assistant" class="secondary-button" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h3>Key Features</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="icon">🔍</div>
+                        <h4>Deep Semantic Search</h4>
+                        <p>Uses sentence-transformers to convert text into high-dimensional vectors, vastly improving retrieval accuracy over standard search methods.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">⚡</div>
+                        <h4>Vector Database</h4>
+                        <p>Utilizes FAISS (Facebook AI Similarity Search) for lightning-fast retrieval of relevant document chunks.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🎯</div>
+                        <h4>Hallucination-Free LLM</h4>
+                        <p>Powered by Llama-3.1 (via Groq API) with strict prompting to ensure the AI only answers based on the uploaded context.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">💻</div>
+                        <h4>User-Friendly Interface</h4>
+                        <p>Deployed as a full-stack web application using Streamlit for seamless document uploading and chatting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="architecture">
+            <div class="container">
+                <h3>Architecture & Flow</h3>
+                <div class="architecture-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Document Ingestion</h4>
+                        <p>Parses uploaded PDFs and intelligently chunks the text using RecursiveCharacterTextSplitter to maintain context windows.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Deep Vector Embeddings</h4>
+                        <p>Converts text chunks into mathematical vectors using HuggingFace's all-MiniLM-L6-v2 embedding model.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Storage</h4>
+                        <p>Stores embeddings locally in a FAISS index for efficient similarity search.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Generative Synthesis</h4>
+                        <p>Retrieves the top most relevant document chunks based on the user's query and passes them to the LLM to generate a factual answer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <div class="container">
+                <h3>Tech Stack</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <strong>Language:</strong> Python 3.10
+                    </div>
+                    <div class="tech-item">
+                        <strong>AI Framework:</strong> LangChain
+                    </div>
+                    <div class="tech-item">
+                        <strong>Embeddings:</strong> HuggingFace (sentence-transformers)
+                    </div>
+                    <div class="tech-item">
+                        <strong>Vector Store:</strong> FAISS CPU
+                    </div>
+                    <div class="tech-item">
+                        <strong>LLM Engine:</strong> Groq API (llama-3.1-8b-instant)
+                    </div>
+                    <div class="tech-item">
+                        <strong>Frontend UI:</strong> Streamlit
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="usage">
+            <div class="container">
+                <h3>How to Use</h3>
+                <div class="usage-steps">
+                    <div class="usage-step">
+                        <span class="step-badge">Step 1</span>
+                        <p>Open the live application or run it locally</p>
+                    </div>
+                    <div class="usage-step">
+                        <span class="step-badge">Step 2</span>
+                        <p>Upload any text-heavy PDF document using the sidebar drag-and-drop feature</p>
+                    </div>
+                    <div class="usage-step">
+                        <span class="step-badge">Step 3</span>
+                        <p>Click "Process Document" to build the AI's vector database</p>
+                    </div>
+                    <div class="usage-step">
+                        <span class="step-badge">Step 4</span>
+                        <p>Use the chat interface to ask specific, analytical questions about the document's contents</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h3>Ready to Get Started?</h3>
+                <p>Experience the power of AI-driven document analysis today</p>
+                <a href="https://enterprise-rag-assistant1.streamlit.app/" class="primary-button large" target="_blank">Launch Application</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Enterprise RAG Assistant. Built with ❤️ by Harman</p>
+            <div class="footer-links">
+                <a href="https://github.com/Harman-1344/Enterprise-RAG-Assistant" target="_blank">GitHub</a>
+                <a href="https://enterprise-rag-assistant1.streamlit.app/" target="_blank">Live Demo</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

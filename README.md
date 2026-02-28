@@ -11,6 +11,8 @@ This repository showcases my ability to design, build, and deploy modern AI arch
 You can test the live deployed application here:
 **[Live Demo: Enterprise RAG Assistant](https://enterprise-rag-assistant1.streamlit.app/)**
 
+**Project Website:** [https://harman-1344.github.io/Enterprise-RAG-Assistant/](https://harman-1344.github.io/Enterprise-RAG-Assistant/)
+
 ---
 
 ## Table of Contents
